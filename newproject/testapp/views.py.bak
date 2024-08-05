@@ -20,7 +20,7 @@ def login(request):
             login(request,user)
             return redirect('/ibm/')
         else:
-            return HttpResponse('Sorry Bad Two')
+            return HttpResponse('Sorry Bad One')
 
     return render(request,'testapp/login.html')
 
