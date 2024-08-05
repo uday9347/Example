@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Register To Login </h1>
+<form method="post" >
+    Enter FirstName:<input type="text" name="first_name" placeholder="Enter FirstName">
+    <p></p>
+    Enter LastName:<input type="text" name="last_name" placeholder="Enter LasttName"><p></p>
+    Enter UserName:<input type="text" name="user_name" placeholder="Enter Username"><p></p>
+    Enter Email:<input type="email" name="email" placeholder="Enter Email"><p></p>
+    Enter Password:<input type="text" name="passw" placeholder="Enter Password"><p></p>
+    Re-Enter Password:<input type="text" name="repassw" placeholder="Reenter password"><p></p>
+    {% csrf_token %}
+    <input type="submit" value="Register">
+</form>
+</body>
+</html>
